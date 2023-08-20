@@ -1,0 +1,385 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: font-family: 'Caveat', cursive;;
+
+}
+.wrk1{
+    width: 100%;
+    /* vh means view port height 1vh=19.2px */
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+.navbar{
+    display: flex;                       /* text comes to side by side */
+    justify-content: space-between;     /* to create space bwt two items */
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;    
+            /* oru div inde excate vertically iragum */
+}
+.logo{
+    width: 130px;
+}
+.listitem{
+    font-family: 'Satisfy', cursive;
+    display: inline-block;       /* displaying items side by side */
+    list-style: none; /* to remove dots permently */
+    margin: 10px 20px;
+    
+/*  */
+}
+
+.links{
+     text-decoration: none;   /* to remove underline on texts */
+     color: black;
+     font-weight: bold;
+}
+/* tag:pseudo-class{property:value} */  
+/* onmouseover for text color change cursor touch */
+.links:hover{
+    color: red;
+}   
+
+header{
+    
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f6f6;
+    padding: -1rem 9%;
+    box-shadow: 0.5rem 0.5rem rgba(56, 54, 54, 0.1);
+}
+
+
+
+
+
+.title{
+  
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.title-h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.odrbtn{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-bottom: 29rem;
+}
+
+.title-img{
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    right: 30px;
+    bottom: -10px; 
+    margin-top: 5rem; 
+    
+}
+
+/* 2 picture joined due to same child class */
+.title-img img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%); /* left -50 poye apo thireche veran vende aa -50 koduthee */
+    transition: bottom 1s , left 2s;
+}
+
+.title-img:hover #burger {
+    bottom: 70px;
+    
+    
+}
+.title-img:hover #back {
+    left: 40%; /* transform tag koduthe konde left ill space unde but athe kanula apo athe konde small valu kodkenam  */
+    
+}
+
+.title-p{
+    font-family: 'Dancing Script', cursive;
+    color: gray;
+}
+.bugicon{
+    width: 90px;
+}
+.image1{
+    width: 50px;
+    height: 50px;
+}
+
+.heading{
+    text-align:center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+}
+.heading span{
+    color: rgb(219, 112, 112);
+}
+
+.special .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    
+}
+
+.special .box-container .box{
+    flex:1 1 25rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.3);
+    cursor: pointer;
+    border-radius: .5rem;
+
+}
+
+.special .box-container .box .image1{
+    height: 100%;
+    width: 90%;
+    object-fit: fill;
+    position: absolute;
+    top: -100%; left: 0;
+
+}
+
+.special .box-container .box .content{
+    text-align: center;
+    background: white;
+    padding: 2rem;
+}
+
+.special .box-container .box .content img{
+    margin: 1.5rem 0;
+}
+
+.special .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+    padding: 1rem 0;
+
+}
+
+.special .box-container .box:hover .image1{
+    top: 0;
+
+}
+
+section
+{
+    margin: 4rem;
+}
+
+.special .box-container .box:hover .content{
+    transform:translateY(100%)
+}
+
+
+/* .....................................popular section................................... */
+.Popular .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem:
+}
+
+.Popular .box-container .box{
+    padding: 2rem;
+    background: white;
+    box-shadow: 0.5rem 1rem rgb(0, 0,0,.1);
+    border: .2rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    text-align: center;
+    flex: 1 1 20rem;
+    position: relative;
+    margin: 1rem;
+    
+}
+.Popular .box-container .box img{
+    height: 25rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .5r;
+}
+.Popular .box-container .box .money{
+   
+    background: var(--red);
+    color: #ff0000;
+    font-size: 1rem;
+    font: 1rem;
+    padding: 5rem 1rem;
+    border-radius: .1;
+    
+    }
+.Popular .box-container .box .btn{
+    text-decoration: none;
+    background-color: silver;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 5px;
+    }
+
+ /* ......................reviw.................................... */   
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    
+}
+.review .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    border: 1rem solid #fff;
+    box-shadow: 0.5rem .5rem rgba(0,0,0,.3);
+    border-radius: .1rem;
+    
+    background: #333;
+    margin-top: 6rem;
+}
+.review .box-container p{
+    color: rgb(194, 208, 158);
+}
+.review .box-container .box img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: 1rem solid #fff;
+    margin-top: -8rem;
+    object-fit: cover;
+}
+.review .box-container .box h3{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+/* ................................order.................................... */
+.heading{
+    margin-bottom: 2rem;
+}
+#order{
+    margin: 8% 8% 0px 8%;
+}
+
+.order-img img{
+    
+    width: 60%;
+    height: 90%;
+    padding-left: 2rem;
+    margin-left: 8rem;
+}
+
+.content{
+    
+    justify-content: space-between;
+    align-items: center;
+   
+    margin-bottom: 1rem;
+    position: relative;
+}
+.ordersection{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    
+}
+.odrbtn2{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 5px;
+    
+}
+
+/* contact*/
+#contact{
+    margin-top: 5rem;
+}
+
+
+
+.icon-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;    
+}
+
+.icon , .up-arrow{
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, white, rgb(255, 128, 0));
+
+}
+
+.icon:hover i{
+    color: blueviolet;
+    /* for animation par1 */
+    animation: shake 0.81s;
+}
+
+/* for animation part2 */
+@keyframes shake{
+    10%{
+        transform: rotate(15deg); /* left shake */
+    }
+    20%{
+        transform: rotate(-15deg);  /* right shake */
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    60%{
+        transform: rotate(-15deg);
+    }
+    70%{
+        transform: rotate(15deg);
+    }
+    80%{
+        transform: rotate(-15deg);
+    }
+}
+
+
+
